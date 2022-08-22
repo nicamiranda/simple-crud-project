@@ -7,8 +7,8 @@ import { environment } from 'src/environments/environment';
 })
 export class LoginService {
 
-  loginurl = `${environment.url}/login`;
-  registerurl = `${environment.url}/register`;
+  loginurl = `${https://json-server-seven-mock.herokuapp.com}/login`;
+  registerurl = `${https://json-server-seven-mock.herokuapp.com}/register`;
   
   constructor(private http : HttpClient) { }
 
