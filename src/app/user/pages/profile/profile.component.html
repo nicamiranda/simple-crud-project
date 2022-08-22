@@ -1,0 +1,26 @@
+<form [formGroup] = "profileForm">
+  <mat-card>
+    <mat-card-content>
+    <!-- Value: {{ profileForm.value | json }} -->
+    <mat-card-header>
+      <mat-card-title>Create your Profile</mat-card-title>
+    </mat-card-header>
+    <mat-form-field class="full-width" appearance="outline" class="form-group">
+      <input matInput formControlName ="name" placeholder="Full Name:" class ="form-control">
+    </mat-form-field><br>
+    <mat-form-field class="full-width" appearance="outline" class="form-group">
+      <input matInput formControlName ="email" placeholder="Email Address:" class ="form-control">
+    </mat-form-field><br>
+    <mat-form-field class="full-width" appearance="outline" class="form-group">
+      <input matInput formControlName ="bio" placeholder="Bio:" class ="form-control">
+    </mat-form-field><br>
+    <section class="section">
+      <mat-checkbox class="example-margin" [(ngModel)]="checked">Active</mat-checkbox>
+    </section>
+    <mat-card-actions>
+      <button mat-flat-button color="primary">Submit</button>
+    </mat-card-actions>
+
+    </mat-card-content>
+  </mat-card>
+</form> 

@@ -1,0 +1,36 @@
+.card {
+  width: clamp(20rem, calc(20rem + 2vw), 22rem);
+  height: 32rem;
+  overflow: hidden;
+  box-shadow: 0 .1rem 1rem rgba(0, 0, 0, 0.1);
+  border-radius: 1em;
+  background: #ECE9E6;
+  background: linear-gradient(to right, #FFFFFF, #ECE9E6);
+  margin-bottom: 30px;
+
+}
+
+.actionbutton {
+    border-radius: 2px;
+    color: white;
+    border: none;
+    padding: 3px 5px;
+    margin: 2px 1px;
+    display: inline-block;
+    position: relative;
+    bottom: 10px;
+    cursor: pointer;
+  }
+  
+.editbutton {
+  background-color: #8a2be2;
+}
+
+.delbutton {
+  background-color: #ff4040;
+}
+
+.actionbutton:hover {
+  background-color: #e7e7e7;
+  color:black;
+}

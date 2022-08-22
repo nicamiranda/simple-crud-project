@@ -1,0 +1,17 @@
+h1 {
+    font-family:arial;
+    color:purple;
+    font-size: 2em;
+    padding-top: 10px ;
+    padding-left: 25px;
+  }
+
+.bookinstance {
+  display: inline-block;
+  box-shadow: 0 1px 1px 0 rgba(0,0,0,.15);
+  padding: 25px;
+  margin: 25px;
+  position: relative;
+  margin-bottom: 10px;
+  transition: all .2s ease-in-out;
+}

@@ -1,0 +1,31 @@
+<mat-card class="bookcard">
+    <img mat-card-image src={{book?.img}} height = "250" >
+    <div class = "container__text">
+    <mat-card-title>{{book?.id}}. {{book?.name}}</mat-card-title>
+    <link
+   rel="stylesheet"
+   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+   integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+   crossorigin="anonymous"
+  />
+        <mat-card-subtitle>Author: {{book?.authors}}</mat-card-subtitle>
+        <div class="container__text__star">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+           </div>
+    
+        <mat-card-content>
+          <p><i>ISBN-10:</i> {{book?.isbn}}</p>
+        </mat-card-content>
+    
+    <mat-card-actions>
+        <button [routerLink]="['form', book?.id]" (click)="edit()" class="actionbutton editbutton" mat-button>EDIT<i class="fa fa-arrow-right"></i></button>
+    </mat-card-actions>
+</div>
+<script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+<mat-card-actions><button (click)="delete()" class ="delbutton" mat-button><a>DELETE</a></button></mat-card-actions>
+<router-outlet></router-outlet>
+</mat-card>

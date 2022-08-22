@@ -1,0 +1,41 @@
+mat-card {
+    max-width: 600px;
+    margin: 2em auto;
+    text-align: center;
+    max-height: 700px;
+    border-color: black;
+    box-shadow: 1 1rem 10rem rgba(1, 1, 1, 1);
+}
+
+mat-form-field {
+    padding-top: 10px;
+    width: 90%;
+}
+.section {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    height: 60px;
+    margin-left: 30px;
+  }
+
+.header{
+    text-align: center;
+    color: purple;
+}
+
+// .full-width {
+//     width: 200%;
+// }
+
+  
+.emailInput{
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
+
+.contentBody {
+    padding: 50px 1rem;
+    background :#1b6ca8;
+    display: block;
+}

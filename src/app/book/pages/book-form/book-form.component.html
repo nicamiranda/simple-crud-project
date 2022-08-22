@@ -1,0 +1,44 @@
+<form [formGroup] = "bookForm">
+    <!-- Value: {{ bookForm.value | json }} -->
+    <mat-card class="bookform">
+        <mat-card-header>
+            <mat-card-title>Add or Edit a Book Card</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+            <mat-form-field class="form-group">
+                <input matInput formControlName ="name" placeholder="Name of the Book:" class ="form-control">
+            </mat-form-field>
+            <div class="authorInput">
+                <label>Authors of the Book:</label><br>
+            <ng-container formArrayName="authors">
+                <ng-container *ngFor="let authors of authorsFormArray.controls; let i = index">
+                        <mat-form-field appearance="fill">
+                            
+                            <input matInput
+                                   [formControlName]="i"
+                                   class ="form-control"
+                                   placeholder="Author">
+                        </mat-form-field>
+                        <button mat-mini-fab (click)="addAuthor()"> 
+                            <mat-icon class="add-course-btn">add</mat-icon>
+                        </button>
+                        <mat-icon class="delete-btn" (click)="deleteAuthor(i)">
+                            delete_forever</mat-icon>
+                </ng-container>
+            </ng-container>
+        </div>
+       <mat-form-field class="form-group">
+        <input matInput formControlName ="isbn" placeholder="ISBN-10:" class ="form-control">
+        </mat-form-field>
+        <mat-form-field class="form-group">
+        <input matInput formControlName ="img" placeholder="Book Cover Image Source:" class ="form-control">
+        </mat-form-field>
+        <mat-card-actions>
+        <button (click)="addNewBook()" *ngIf="showAddBtn" type="button" class="button" ><a>Add</a></button>
+        </mat-card-actions>
+        <mat-card-actions>
+        <button (click)="updateBook()" *ngIf="showUpdateBtn" type="button" class="button" ><a>Update</a></button>
+        </mat-card-actions>
+    </mat-card-content>
+    </mat-card>
+</form>

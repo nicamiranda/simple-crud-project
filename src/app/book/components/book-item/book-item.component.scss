@@ -1,0 +1,93 @@
+$primary-color: #fff;
+
+.bookcard {
+    background: rgb(0,0,0);
+    background: radial-gradient(circle, rgba(0,0,0,0) 0%, rgba(180,148,233,0.18017629415047265) 100%);
+    width: 30rem;
+    height: 12rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    position: relative;
+    margin-bottom: 50px;
+    transition: all .2s ease-in-out;
+}
+
+.container__text {
+    position: relative;
+    top: 5px;
+    left: 20px;
+    width: 20rem;
+}
+
+img {
+    // width: 200px;
+    height: 225px;
+    position: relative;
+    padding: 10px 5px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: flex-end;
+    text-decoration: none;
+
+   }
+
+.container__text__star span {
+    font-size: 0.8rem;
+    color: #ffa800;
+    margin: -5px 0 20px;
+}
+
+.actionbutton {
+
+   position: absolute;
+   bottom: 3px;
+   right: -20px;
+   border: none;
+   outline: none;
+   display: flex;
+   align-items: center;
+   background-color: #fc9400;
+   color: $primary-color;
+   padding: 5px 20px;
+   font-size: 1rem;
+   text-transform: uppercase;
+   cursor: pointer;
+   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.294);
+
+   i {
+    margin-left: 20px;
+    font-size: 1.5rem;
+   }
+}
+
+.actionbutton:hover {
+    background-color: black;
+    color:#fc9400;
+  }
+
+.delbutton {
+    background-color: #fff0f5;
+    border: 1px solid black;
+    border-radius: 2px;
+    position: absolute;
+    padding: 5px 10px;
+    cursor: pointer;
+    a {
+    color: #fc9400;
+    display: inline-block;
+    position: relative;
+    &:after {
+      content: "\1F87A";
+      font-family: FontAwesome;
+      margin-left: -10px;
+      opacity: 0;
+      vertical-align: middle;
+      transition: margin .3s, opacity .3s;
+    }
+
+    &:hover:after {
+      margin-left: 5px;
+      opacity: 1;
+    }
+  }
+}

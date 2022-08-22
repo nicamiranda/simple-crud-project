@@ -1,0 +1,10 @@
+<app-command-bar
+[componentTitle] = "'Top Book Blogs of 2022!'"
+(addEmitter) = "executeAdd()"
+(deleteAllEmitter) = 'executeDeleteAll($event)'></app-command-bar>
+<div class = "instance" *ngFor = "let data of blogs">
+    <app-blog-item [blog] = "data"
+    (editEmitter) = "executeEdit($event)"
+    (deleteEmitter) = "executeDelete($event)">
+    </app-blog-item>
+</div>

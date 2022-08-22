@@ -1,0 +1,9 @@
+<mat-toolbar class="navbar">
+    <h2>{{componentTitle}}</h2>
+    <div class="button">
+        <button (click)="goToPage('form'); addNewItem()" class="button" mat-raised-button color="accent">ADD</button>
+        <a routerLink="deleteAll()">
+        <button class="button" mat-raised-button color="basic">DELETE ALL</button>
+        </a>
+    </div>
+</mat-toolbar>

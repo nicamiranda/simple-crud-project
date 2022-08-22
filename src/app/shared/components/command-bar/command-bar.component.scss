@@ -1,0 +1,27 @@
+h2 {
+    font-family:arial;
+    color:purple;
+    font-size: 1.5em;
+    font-weight: 700;
+    padding-top: 10px ;
+    padding-left: 25px;
+  }
+
+  .button {
+
+    display: inline-block;
+    border: none;
+    color: hsl(0, 100%, 1%);
+    padding: 7px 15px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 10px 10px;
+ 
+}
+
+.button:hover {
+  color: #6f2da8;
+  font-weight: bold;
+  cursor: pointer;
+}

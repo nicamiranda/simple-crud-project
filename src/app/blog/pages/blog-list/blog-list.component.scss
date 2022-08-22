@@ -1,0 +1,14 @@
+h1 {
+    font-family:arial;
+    color:purple;
+    font-size: 2em;
+    padding-top: 10px ;
+    padding-left: 25px;
+  }
+
+.instance {
+    display: inline-block;
+    width: clamp(20rem, calc(20rem + 2vw), 22rem);
+    height: 200px;
+    padding: 25px;
+}

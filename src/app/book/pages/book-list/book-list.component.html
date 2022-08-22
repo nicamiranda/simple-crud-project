@@ -1,0 +1,11 @@
+<app-command-bar
+[componentTitle] = "'Best Book Series of all Time!'"
+(addEmitter) = "executeAdd()"
+(deleteAllEmitter) = "executeDeleteAll($event)">
+</app-command-bar>
+<div class = "bookinstance" *ngFor = "let data of books">
+    <app-book-item [book] = "data"
+    (editEmitter) = "executeEdit($event)"
+    (deleteEmitter) = "executeDelete($event)">
+    </app-book-item>
+</div>

@@ -1,0 +1,15 @@
+<mat-toolbar *ngIf="sharedService.visible" color="primary" class="navbar">
+    <div style="font-size: 1.4em;">Nica's Angular Project - Simple CRUD</div>
+    <div class="button">
+        <a href routerLink="/blog">
+        <button class="button" mat-raised-button color="accent">Blog</button>
+        </a>
+        <a href routerLink="/book">
+        <button class="button" mat-raised-button color="basic">Book</button>
+        </a>
+        <a href routerLink="/profile">
+        <button class="button" mat-raised-button color="primary">Profile</button>
+        </a>
+        <button (click)="logout()" class="button" mat-raised-button color="primary">Logout</button>
+    </div>
+</mat-toolbar>
