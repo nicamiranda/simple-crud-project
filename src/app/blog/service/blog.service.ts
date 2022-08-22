@@ -10,7 +10,7 @@ import { Blog } from '../models/blog';
 
 export class BlogService {
   blogs: Blog[] = [];
-  blogurl = `${environment.myurl}/blogs`;
+  blogurl = `${https://nica-mockapi-json-server.herokuapp.com}/blogs`;
   showUpdateBtn!: boolean;
   showAddBtn!: boolean;
 
