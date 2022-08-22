@@ -15,7 +15,7 @@ export class HeaderInterceptor implements HttpInterceptor {
 
   static accessToken = '';
   refresh = false;
-  refreshurl = `${environment.url}/refresh`;
+  refreshurl = `${https://json-server-seven-mock.herokuapp.com}/refresh`;
 
   constructor(private http: HttpClient) {}
 
