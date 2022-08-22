@@ -8,7 +8,7 @@ import { Book } from '../models/book';
   providedIn: 'root'
 })
 export class BookService {
-  bookurl = `${environment.myurl}/books`;
+  bookurl = `${https://nica-mockapi-json-server.herokuapp.com}/books`;
   books: Book[] = [];
   showUpdateBtn!: boolean;
   showAddBtn!: boolean;
