@@ -17,7 +17,7 @@ export class LoginComponent implements OnInit {
   hide: boolean = false;
   users : any = [];
   responsedata: any;
-  loginurl = `${https://json-server-seven-mock.herokuapp.com}/login`;
+  loginurl = "https://json-server-seven-mock.herokuapp.com/login";
 
   constructor(private lf : FormBuilder,
               private router: Router,
