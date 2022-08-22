@@ -13,7 +13,7 @@ import { environment } from 'src/environments/environment';
 export class RegisterComponent implements OnInit {
   registerForm : FormGroup;
   hide: boolean = false;
-  registerurl = `${environment.url}/register`;
+  registerurl = `${https://json-server-seven-mock.herokuapp.com}/register`;
   
   constructor(private rf : FormBuilder, private router: Router, private authService : AuthService, private http : HttpClient) {
     this.registerForm = this.rf.group(
